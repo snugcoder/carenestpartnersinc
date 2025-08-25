@@ -2,6 +2,18 @@ import Image from "next/image";
 
 export const Motivation = () => {
   return (
+    <>
+    {/* <section className="carousel">
+    <div>
+      <h2>Flexible nursing positions, tailored to you.</h2>
+    </div>
+    <div className="carousel-inner">
+      <div className="carousel-item active">
+        <h3>Access nursing opportunities in your area</h3>
+        <p>No matter your </p>
+      </div>
+    </div>
+    </section> */}
     <section className="py-16 lg:py-24 bg-healthcare-cream">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -29,7 +41,7 @@ export const Motivation = () => {
           
           {/* CTA Section */}
           <div className="pt-8">
-            <div className="healthcare-card card max-w-md mx-auto text-center">
+            <div className="healthcare-card card max-w-md mx-auto text-center bg-card rounded-xl shadow-2xl p-6">
               <h3 className="text-xl font-semibold text-foreground mb-4">
                 Ready to start your journey?
               </h3>
@@ -49,5 +61,6 @@ export const Motivation = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
