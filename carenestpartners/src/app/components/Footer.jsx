@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
       <footer className=" bg-[#16437E]">
-        <div className="footer sm:footer-horizontal text-base-content p-10 flex justify-between">
+        <div className="footer sm:footer-horizontal text-base-content p-10">
         <aside className="flex gap-5">
           <img src="./images/carenest_fullimg.svg" alt="Carenest Partners Inc Logo." className="h-40" />
           <div className="pt-6 footer-text">
@@ -15,7 +15,7 @@ export default function Footer() {
           {/* could place media here in the future */}
         </aside>
 
-        <div className="footer-text pt-6 text-xl">
+        <div className="footer-text pt-6 pl-4 text-xl">
           <nav>
             <Link href="/"><h6 className="footer-title flex">home.</h6></Link>
           </nav>
@@ -31,7 +31,7 @@ export default function Footer() {
           </nav>
         </div>
         </div>
-        <div className="footer-text flex justify-center pb-4 text-[#F9FBED]"><p> © 2025 Carenest Partners Inc. All rights reserved.</p></div>
+        <div className="footer-text copyright flex justify-center pb-4 text-[#F9FBED]"><p> © 2025 Carenest Partners Inc. All rights reserved.</p></div>
       </footer>
   );
 }

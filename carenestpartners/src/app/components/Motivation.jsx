@@ -3,17 +3,6 @@ import Image from "next/image";
 export const Motivation = () => {
   return (
     <>
-    {/* <section className="carousel">
-    <div>
-      <h2>Flexible nursing positions, tailored to you.</h2>
-    </div>
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <h3>Access nursing opportunities in your area</h3>
-        <p>No matter your </p>
-      </div>
-    </div>
-    </section> */}
     <section className="py-16 lg:py-24 bg-healthcare-cream">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -23,7 +12,7 @@ export const Motivation = () => {
             <span className="text-primary">Thrive where you belong.</span>
           </h2>
           
-          {/* Logo */}
+          {/* Logo
           <div className="flex justify-center py-8">
             <Image 
               src="/images/carenestpartnerslogo.png"
@@ -34,10 +23,10 @@ export const Motivation = () => {
             />
           </div>
           
-          {/* Testimonial */}
+          // Testimmonial
           <blockquote className="text-xl lg:text-2xl text-foreground font-medium max-w-2xl mx-auto">
             "We love carenest because of the guarantee of proper care"
-          </blockquote>
+          </blockquote> */}
           
           {/* CTA Section */}
           <div className="pt-8">
@@ -49,11 +38,8 @@ export const Motivation = () => {
                 Join thousands of healthcare professionals who trust Carenest with their careers.
               </p>
               <div className="space-y-3">
-                <button className="w-full btn-healthcare-primary px-6 py-3 rounded-lg font-medium">
+                <button className="btn-healthcare-primary px-5 py-3 rounded-lg font-medium mx-auto">
                   Join as Healthcare Professional
-                </button>
-                <button className="w-full btn-healthcare-secondary px-6 py-3 rounded-lg font-medium">
-                  I'm a Healthcare Facility
                 </button>
               </div>
             </div>
