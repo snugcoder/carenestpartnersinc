@@ -78,7 +78,6 @@ export const Motivation = () => {
                   />
                   {/* Overlay tint */}
                   <div className="absolute inset-0 bg-black/60"></div>
-                  {/* Text + Button content */}
                   <div className="absolute inset-0 flex flex-col justify-center items-center p-6 z-10 text-white">
                     <p className="mb-6 text-lg font-medium">
                       Join care facilities who trust Carenest with supportive nursing professionals.

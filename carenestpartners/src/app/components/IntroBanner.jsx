@@ -22,21 +22,30 @@ export default function IntroBanner() {
         //             </div>
 
         <div
-            className="hero min-h-screen"
+            className="hero min-h-[650px] md:h-[400px] rounded-2xl relative overflow-hidden"
             style={{
                 backgroundImage:
                     "url('images/ai_banner.jpeg')",
+                    backgroundSize: "cover",
             }}
+            
         >
-            <div className="hero-overlay"></div>
-            <div className="hero-content text-neutral-content text-center">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold text-white">Smarter Staffing for a Healthier Tomorrow</h1>
-                    <p className="mb-5 text-white">
-                        At Carenest Partners Inc. we make it our priority to develop an intelligent workforce.  
+            <div className="hero-overlay bg-black/50"></div>
+            {/* <div className="hero-content text-neutral-content text-center"> */}
+
+            <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col sm:flex-row justify-between items start sm:items-end gap-6">
+                <div className="max-w-4xl">
+                    
+                    <h1 className="mb-5 text-6xl font-bold leading-tight text-white">Empowering Nurses. Elevating Care.</h1>
+                    <p className="mt-2 text-white md:text-lg">
+                        Thoughtful staffing solutions that put people first; care begins with those who give it.  
                     </p>
-                    <button className="btn btn-primary text-white">Join Our Network</button>
-                    <button className="btn btn-primary text-white">Explore Solutions</button>
+                    
+                    </div>
+                    <div className="flex flex-col right-6  sm:flex-row gap-4">
+                    <button className="btn btn-primary text-white w-full sm:w-auto">Join Our Network</button>
+                    <button className="btn btn-primary text-white w-full sm:w-auto">Explore Solutions</button>
+        
                 </div>
             </div>
         </div>

@@ -10,8 +10,9 @@ export default function HomePage() {
         <div className="body-gradient">
             <Marquee />
             <br></br>
+            <IntroBanner />
             <div className="container mx-auto">
-                <IntroBanner />
+                
                 <FeaturesSection/>
                 <Motivation />
                 <InfoForm/>

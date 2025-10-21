@@ -18,10 +18,10 @@ export default function Navbar() {
   return (
     <nav
       className={`sticky top-0 z-50 transition-colors duration-300 ${
-        isSticky ? "bg-[#F9FBED] shadow-md" : "bg-transparent"
+        isSticky ? "bg-[#f7f7f7] shadow-md" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between p-4">
+      <div className="container mx-auto flex items-center justify-between p-4 ">
         {/* Logo & Brand */}
         <div className="flex items-center gap-4">
           <img
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <ul className="hidden lg:flex gap-6">
+        <ul className="hidden lg:flex gap-6 text-lg">
           <li>
           <Link href="/" className="hover:underline">
             Home
