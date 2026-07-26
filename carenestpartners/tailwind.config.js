@@ -12,6 +12,13 @@ module.exports = {
           '100%': { transform: 'translateX(-50%)' },
         },
       },
+      colors: {
+        text: '#120409',
+        background: '#f4f5ff',
+        primary: '#1f3883',
+        secondary: '#ab65a2',
+        accent: '#c4d399',
+      },
     },
   },
   plugins: [],

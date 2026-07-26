@@ -33,7 +33,7 @@ export default function IntroBanner() {
             <div className="hero-overlay bg-black/50"></div>
             {/* <div className="hero-content text-neutral-content text-center"> */}
 
-            <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col sm:flex-row justify-between items start sm:items-end gap-6">
+            <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col sm:flex-row justify-between items start sm:items-end gap-6 ">
                 <div className="max-w-4xl">
                     
                     <h1 className="mb-5 text-6xl font-bold leading-tight text-white">Empowering Nurses. Elevating Care.</h1>
@@ -41,6 +41,7 @@ export default function IntroBanner() {
                         Thoughtful staffing solutions that put people first; care begins with those who give it.  
                     </p>
                     
+                    {/* add links here */}
                     </div>
                     <div className="flex flex-col right-6  sm:flex-row gap-4">
                     <button className="btn btn-primary text-white w-full sm:w-auto">Join Our Network</button>

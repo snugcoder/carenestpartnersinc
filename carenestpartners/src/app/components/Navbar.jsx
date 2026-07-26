@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav
       className={`sticky top-0 z-50 transition-colors duration-300 ${
-        isSticky ? "bg-[#f7f7f7] shadow-md" : "bg-transparent"
+        isSticky ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between p-4 ">

@@ -16,7 +16,7 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
@@ -24,7 +24,7 @@
     --primary: #D8E594;
     --teritary: #F9FBED;
   }
-}
+} */
 
 body {
   background: var(--background);
