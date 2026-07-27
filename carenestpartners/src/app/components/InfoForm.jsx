@@ -52,7 +52,7 @@ export default function InfoForm (){
                 </div>
               </div>
             </div>
-            <div className="w-full ml-80">
+            <div className="w-full flex justify-end">
               <button className="flex-shrink-1 bg-[#16437E] hover:bg-[#0f3566] border-[#16437E] hover:border-[#0f3566] text-lg border-4 text-[#F9FBED] py-3 px-3 rounded" type="submit">
                 Sign Up
               </button>

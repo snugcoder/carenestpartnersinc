@@ -8,7 +8,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 0);
+      setIsSticky(window.scrollY > 0.5);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -61,7 +61,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/about/partners"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 cursor-not-allowed"
                 >
                   Partners
                 </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/about/news"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 cursor-not-allowed"
                 >
                   News
                 </Link>
@@ -116,7 +116,7 @@ export default function Navbar() {
               <li>
                 <Link
                   href="/services/facilities"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 cursor-not-allowed"
                 >
                   Skilled Nursing Facilities
                 </Link>
@@ -124,7 +124,7 @@ export default function Navbar() {
                 <li>
                 <Link
                   href="/services/facilities"
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 cursor-not-allowed"
                 >
                   Health Systems & Hospitals
                 </Link>
