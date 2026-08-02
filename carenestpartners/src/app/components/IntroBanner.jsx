@@ -22,7 +22,7 @@ export default function IntroBanner() {
         //             </div>
 
         <div
-            className="hero min-h-[650px] md:h-[400px] rounded-2xl relative overflow-hidden"
+            className="min-h-[650px] md:h-[400px] rounded-2xl relative overflow-hidden"
             style={{
                 backgroundImage:
                     "url('images/ai_banner.jpeg')",
@@ -30,7 +30,7 @@ export default function IntroBanner() {
             }}
             
         >
-            <div className="hero-overlay bg-black/50"></div>
+            <div className=" bg-black/50"></div>
             {/* <div className="hero-content text-neutral-content text-center"> */}
 
             <div className="absolute bottom-6 left-6 right-6 z-20 flex flex-col sm:flex-row justify-between items start sm:items-end gap-6 ">
@@ -44,8 +44,8 @@ export default function IntroBanner() {
                     {/* add links here */}
                     </div>
                     <div className="flex flex-col right-6  sm:flex-row gap-4">
-                    <button className="btn btn-primary text-white w-full sm:w-auto">Join Our Network</button>
-                    <button className="btn btn-primary text-white w-full sm:w-auto">Explore Solutions</button>
+                    <button className=" text-white w-full sm:w-auto">Join Our Network</button>
+                    <button className=" text-white w-full sm:w-auto">Explore Solutions</button>
         
                 </div>
             </div>

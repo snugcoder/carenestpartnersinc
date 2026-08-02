@@ -64,7 +64,6 @@ export const FeaturesSection = () => {
                 className="flex items-start space-x-4 group"
               >
                 <div className="bg-primary p-3 rounded-lg group-hover:bg-primary/20 transition-colors flex gap-3">
-                  <div className="{/*bg-amber-100 flex items-center rounded-md p-0.5*/}"> <feature.icon className="h-2 w-2 text-primary"/>  </div>
                 <div className="space-y-2">
                   <h3 className="text-lg font-semibold text-foreground">
                     {feature.title}

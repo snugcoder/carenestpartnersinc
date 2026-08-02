@@ -1,4 +1,5 @@
 "use client";
+import { use, useState } from "react";
 
 export default function InfoForm (){
   function handleSubmit(e){
@@ -7,6 +8,9 @@ export default function InfoForm (){
     const formData = new FormData(form);
     fetch('database-api', {method: form.method, body: formData });
   }
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
   return (
     <>
       {/* form styling from tailwind documentation: https://v1.tailwindcss.com/components/forms */}
@@ -21,24 +25,24 @@ export default function InfoForm (){
               <label className="block uppercase tracking-wide text-s text-gray-500 font-bold mb-2">
                 First Name
               </label>
-              <input className="appearance-none block w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200"/>
+              <input className="appearance-none block w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200" name="firstName" value={firstName} onChange={e => setFirstName(e.target.value)}/>
             </div>
 
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-s text-gray-500 font-bold mb-2">
                 Last Name
               </label>
-              <input className="appearance-none block not-first:w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200" />
+              <input className="appearance-none block not-first:w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200" name="lastName" value={lastName} onChange={e => setLastName(e.target.value)}/>
             </div>
 
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-s text-gray-500 font-bold mb-2">
                 email address
               </label>
-              <input className="appearance-none block w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200"/>
+              <input className="appearance-none block w-full   border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-1 focus:bg-white bg-gray-200" name="email" value={email} onChange={e => setEmail(e.target.value)}/>
             </div>
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label className="block uppercase tracking-wide text-s text-gray-500 font-bold mb-2" htmlFor="form-select">
+              <label className="block uppercase tracking-wide text-s text-gray-500 font-bold mb-2" htmlFor="form-select" name="inquiry">
                 inquiry type
               </label>
               <div className="relative">

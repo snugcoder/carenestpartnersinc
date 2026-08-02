@@ -12,7 +12,7 @@ export const Motivation = () => {
 
             <div className="flex flex-row gap-4">
               <div className="pt-8">
-                <div className="healthcare-card relative max-w-md max-h-60 mx-auto text-center rounded-xl shadow-2xl overflow-hidden">
+                <div className="healthcare-card relative max-w-md flex-col lg:flex-row mx-auto text-center rounded-xl shadow-2xl overflow-hidden">
                   {/* Image fills the entire card */}
                   <img
                     src="images/ai_d_banner.jpeg"
@@ -36,10 +36,10 @@ export const Motivation = () => {
 
 
               <div className="pt-8">
-                <div className="healthcare-card relative max-w-md max-h-60 mx-auto text-center rounded-xl shadow-2xl overflow-hidden">
+                <div className="healthcare-card relative max-w-md flex-col lg:flex-row mx-auto text-center rounded-xl shadow-2xl overflow-hidden">
                   {/* Image fills the entire card */}
                   <img
-                    src="images/admin_ai.webp"
+                    src="/images/admin_ai.webp"
                     alt="nurse on laptop"
                     className="w-full h-full object-cover"
                   />
