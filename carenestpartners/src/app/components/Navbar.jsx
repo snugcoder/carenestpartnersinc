@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isSticky, setIsSticky] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,14 +36,16 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <ul className="hidden lg:flex gap-6 text-lg">
+        <div className="">
+          {/* md:flex flex-col */}
+        <ul className="hidden lg:flex gap-6 text-md items-center">
           <li>
-          <Link href="/" className="hover:underline">
+          <Link href="/" className="px-4 py-2 hover:bg-gray-100 rounded">
             Home
           </Link>
           </li>
            <li className="relative group">
-            <button className="hover:underline flex items-center gap-1">
+            <button className="px-4 py-1 hover:bg-gray-100 rounded flex items-center gap-1">
               About Us
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,26 +82,70 @@ export default function Navbar() {
 
 
           <li>
-          <Link href="/join-our-network/contact-us" className="hover:underline">
+          <Link href="/join-our-network/contact-us" className="px-4 py-2 hover:bg-gray-100 rounded">
             Contact
           </Link>
           </li>
 
           <li>
-          <Link href="/apply" className="hover:underline">
+          <Link href="/apply" className="px-4 py-2 hover:bg-gray-100 rounded">
             Apply Now
           </Link>
           </li>
 
           <li>
-          <Link href="/services" className="hover:underline">
+          <Link href="/services" className="px-4 py-2 hover:bg-gray-100 rounded">
             Services
             {/* include In Home Care, Skilled Nursing Facilities, and Health Systems + Hospitals */}
           </Link>
           </li>
-          
         </ul>
+        <button type="button" className= "bg-transparent shadow-sm py-2 px-2 rounded hover:bg-gray-100 lg:hidden" aria-expanded={open} aria-controls="chm15-menu" aria-label={open ? "Close menu": "Open menu"} onClick={()=>setOpen(!open)}> 
+            <svg className={open ? "hidden":"icon-open"} viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" aria-hidden="true">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg className={open ? "icon-close":"hidden"} viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" aria-hidden="true">
+              <path d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
       </div>
+      </div>
+       {open &&(
+          <div id="chm15-menu" className="lg:hidden bg-white shadow-md">
+          <ul className="flex flex-col p-4 gap-2 text-lg">
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/" className="" onClick={() => setOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/about/partners" className="" onClick={() => setOpen(false)}>
+                Partners
+              </Link>
+            </li>
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/about/news" className="" onClick={() => setOpen(false)}>
+                News
+              </Link>
+            </li>
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/join-our-network/contact-us" className="" onClick={() => setOpen(false)}>
+                Contact
+              </Link>
+            </li>
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/apply" className="" onClick={() => setOpen(false)}>
+                Apply Now
+              </Link>
+            </li>
+            <li className="px-2 py-2 hover:bg-gray-100">
+              <Link href="/services" className="" onClick={() => setOpen(false)}>
+                Services
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

@@ -7,11 +7,13 @@ import Navbar from "./components/Navbar";
 const sorts_mill_goudy = Sorts_Mill_Goudy({
   variable: "--font-sorts-mill-goudy",
   weight: ["400"],
+  preload: false
 });
 
 const molengo = Molengo({
   variable: "--font-molengo",
   weight: ["400"],
+  preload: false
 });
 
 const oswald = Oswald({
