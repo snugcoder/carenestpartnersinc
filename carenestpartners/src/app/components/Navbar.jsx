@@ -46,7 +46,7 @@ export default function Navbar() {
           </li>
            <li className="relative group">
             <button className="px-4 py-1 hover:bg-gray-100 rounded flex items-center gap-1">
-              About Us
+              <Link href='/about'>About Us</Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -63,14 +63,6 @@ export default function Navbar() {
             <ul className="absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
               <li>
                 <Link
-                  href="/about/partners"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Partners
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/about/news"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
@@ -82,8 +74,8 @@ export default function Navbar() {
 
 
           <li>
-          <Link href="/join-our-network/contact-us" className="px-4 py-2 hover:bg-gray-100 rounded">
-            Contact
+          <Link href="/contact-us" className="px-4 py-2 hover:bg-gray-100 rounded">
+            Contact Us
           </Link>
           </li>
 
@@ -119,8 +111,8 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="px-2 py-2 hover:bg-gray-100">
-              <Link href="/about/partners" className="" onClick={() => setOpen(false)}>
-                Partners
+              <Link href="/about" className="" onClick={() => setOpen(false)}>
+                About Us
               </Link>
             </li>
             <li className="px-2 py-2 hover:bg-gray-100">
@@ -129,13 +121,8 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="px-2 py-2 hover:bg-gray-100">
-              <Link href="/join-our-network/contact-us" className="" onClick={() => setOpen(false)}>
-                Contact
-              </Link>
-            </li>
-            <li className="px-2 py-2 hover:bg-gray-100">
-              <Link href="/apply" className="" onClick={() => setOpen(false)}>
-                Apply Now
+              <Link href="/contact-us" className="" onClick={() => setOpen(false)}>
+                Contact Us
               </Link>
             </li>
             <li className="px-2 py-2 hover:bg-gray-100">

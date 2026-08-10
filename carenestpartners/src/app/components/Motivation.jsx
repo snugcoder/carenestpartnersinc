@@ -15,7 +15,7 @@ export const Motivation = () => {
                 <div className="healthcare-card relative max-w-md flex-col lg:flex-row mx-auto text-center rounded-xl shadow-2xl overflow-hidden">
                   {/* Image fills the entire card */}
                   <img
-                    src="images/ai_d_banner.jpeg"
+                    src="/images/ai_d_banner.jpeg"
                     alt="nurse on laptop"
                     className="w-full h-full object-cover"
                   />
