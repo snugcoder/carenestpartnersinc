@@ -15,6 +15,14 @@
   --font-mono: var(--font-geist-mono);
 
 }
+/* 
+palette: {
+  text: {
+    primary: '#000000',
+    secondary: '#D8E594',
+  },
+
+} */
 
 /* @media (prefers-color-scheme: dark) {
   :root {

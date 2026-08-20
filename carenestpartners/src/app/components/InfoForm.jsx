@@ -11,6 +11,7 @@ export default function InfoForm() {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [occupation, setOccupation] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
 
   return (
     <>
@@ -19,11 +20,12 @@ export default function InfoForm() {
           <form>
             <div className="border-t border-gray-200 pb-12">
               <div><h1 className="font-semibold pt-8">Personal Information</h1></div>
+
               <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
-                  <label htmlFor="first-name" className="block text-sm/7 font-medium text-black">Full Name</label>
+                  <label htmlFor="full-name" className="block text-sm/7 font-medium text-black">Full Name</label>
                   <div className="mt-2">
-                    <input id="first-name" type="text" name="first-name" autoComplete="given-name" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6" />
+                    <input id="full-name" type="text" name="full-name" autoComplete="given-name" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6" value={fullName} onChange={e=>setFullName(e.target.value)} />
                   </div>
                 </div>
 
@@ -32,21 +34,21 @@ export default function InfoForm() {
                 <div className="sm:col-span-3">
                   <label htmlFor="email" className="block text-sm/6 font-medium text-black">Email Address</label>
                   <div className="mt-2">
-                    <input id="email" type="email" name="email" autoComplete="email" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6" />
+                    <input id="email" type="email" name="email" autoComplete="email" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6" value={email} onChange={e => setEmail(e.target.value)} />
                   </div>
                 </div>
 
                 <div className="sm:col-span-3">
                   <label htmlFor="last-name" className="block text-sm/6 font-medium text-black">Phone Number</label>
                   <div className="mt-2">
-                    <input id="phone-number" type="text" name="phone-number" autoComplete="phone number" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6" />
+                    <input id="phone-number" type="text" name="phone-number" autoComplete="phone number" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
                   </div>
                 </div>
 
                 <div className="sm:col-span-3">
                   <label htmlFor="last-name" className="block text-sm/6 font-medium text-black">Occupation</label>
                   <div className="mt-2">
-                    <input id="occuptation" type="text" name="occupation" autoComplete="occupation" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6" />
+                    <input id="occuptation" type="text" name="occupation" autoComplete="occupation" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6" value={occupation} onChange={e => setOccupation(e.target.value)}/>
                   </div>
                 </div>
               </div>
@@ -57,7 +59,7 @@ export default function InfoForm() {
               <div className="sm:col-span-3">
                 <label htmlFor="inquiry-type" className="block text-sm/6 font-medium text-black">Inquiry Type</label>
                 <div className="mt-2 grid grid-cols-1">
-                  <select id="country" name="country" autoComplete="country-name" className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-black outline-1 -outline-offset-1 outline-gray-300 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6" htmlFor="form-select">
+                  <select id="inquiry-select" name="inquiry-select" autoComplete="inquiry-select" className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white/5 py-1.5 pr-8 pl-3 text-base text-black outline-1 -outline-offset-1 outline-gray-300 *:bg-gray-800 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6" htmlFor="form-select">
                     <option >General Information</option>
                     <option>Special Inquiry</option>
                   </select>
@@ -66,11 +68,16 @@ export default function InfoForm() {
                   </svg>
                 </div>
               </div>
-              <p className="mt-3 text-sm/6 text-gray-400">Kindly provide details about your inquiry.</p>
+              <p className="mt-3 text-sm/6 text-gray-600 font-bold">Kindly provide details about your inquiry.</p>
               <div className="mt-2">
-                <textarea id="about" name="about" rows="3" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] sm:text-sm/6"></textarea>
+                <textarea id="about" name="about" rows="3" className="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-black outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[#16437E] md:text-sm/6"></textarea>
               </div>
 
+            </div>
+            <div className="w-full flex justify-end">
+              <button className="flex-shrink-1 bg-[#16437E] hover:bg-[#0f3566] border-[#16437E] hover:border-[#0f3566] text-lg border-4 text-[#F9FBED] py-3 px-3 rounded" type="submit">
+                Sign Up
+              </button>
             </div>
           </form>
         </div>

@@ -25,7 +25,7 @@ export default function IntroBanner() {
             className="min-h-[650px] md:h-[400px] rounded-2xl relative overflow-hidden"
             style={{
                 backgroundImage:
-                    "url('/images/ai_banner.jpeg')",
+                    "url('/images/nappy-unsplash.jpg')",
                     backgroundSize: "cover",
             }}
             

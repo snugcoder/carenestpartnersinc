@@ -7,7 +7,7 @@ export default function Footer() {
         
         <aside className="flex flex-col gap-5">
           <div>
-          <img src="./images/carenest_fullimg.svg" alt="Carenest Partners Inc Logo." className="h-40" />
+          <img src="/images/carenest_fullimg.svg" alt="Carenest Partners Inc Logo." className="h-40" />
           <div className="pt-6 footer-text">
             <h1 className="logo-font text-3xl">
               CARENEST PARTNERS INC.
@@ -18,17 +18,17 @@ export default function Footer() {
           <div className="flex flex-row gap-7">
             {/* media attribution - <a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons">Brands and logotypes icons created by Magnific - Flaticon</a> */}
             <div>
-              <img src="./images/instagram.png" alt="instagram" className="h-8"/>
+              <img src="/images/instagram.png" alt="instagram" className="h-8"/>
             </div>
             <div>
               
-              <img src="./images/facebook.png" alt="facebook" className="h-8"/>
+              <img src="/images/facebook.png" alt="facebook" className="h-8"/>
             </div>
             <div>
-              <img src="./images/twitter.png" alt="twitter/X" className="h-8"/>
+              <img src="/images/twitter.png" alt="twitter/X" className="h-8"/>
             </div>
             <div>
-              <img src="./images/linkedin.png" alt="linkedin" className="h-8"/>
+              <img src="/images/linkedin.png" alt="linkedin" className="h-8"/>
             </div>
           </div>
         </aside>
